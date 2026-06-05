@@ -5,7 +5,7 @@ class CurrentUser {
   // Simulazione utente loggato
   static final UserProfile session = UserProfile(
     id: 'u1',
-    displayName: 'Mario Kayak',
-    role: UserRole.contributor,
+    displayName: 'AndreRock',
+    role: UserRole.admin,
   );
 }

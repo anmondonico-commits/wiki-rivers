@@ -1,6 +1,6 @@
 class RiverSection {
   final String id;
-  final String name;
+  String name;
   final int difficulty;
   final String shortDescription;
   final String longDescription;
@@ -12,7 +12,7 @@ class RiverSection {
     required this.name,
     required this.difficulty,
     required this.shortDescription,
-    required this.longDescription,
+    this.longDescription = '', 
     required this.lastUpdated,
     required this.updatedBy,
   });

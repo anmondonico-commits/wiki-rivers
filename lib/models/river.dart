@@ -4,18 +4,19 @@ class River {
   final String id;
   final String name;
   final String country;
+  final String description; // Nuovo campo
   final List<RiverSection> sections;
 
   River({
     required this.id,
     required this.name,
     required this.country,
+    this.description = '', // Default per compatibilità mock
     required this.sections,
   });
 
   int get sectionCount => sections.length;
 
-  // Evita errori se la lista è vuota
   DateTime get latestUpdate {
     if (sections.isEmpty) return DateTime(2000, 1, 1);
     return sections
